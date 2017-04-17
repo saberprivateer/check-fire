@@ -1,0 +1,24 @@
+<md-card *ngFor = "let activity of activities" style="padding:0px">
+	<md-card-content class="container"
+	fxLayout
+	fxLayout.xs="row"
+	style="padding: 5px;">
+	<img style="width:30px;height:30px;padding:5px;" src="app/images/{{activity.activity_icon}}.png">
+	<div fxFlex layout = "column">
+		<i>{{activity.activity_verb}}</i>
+		<div class="container"
+		fxLayout
+		fxLayout.xs="row">
+		<span style="margin-right: 10px" class="md-caption">12:30 am</span>
+		<span fxFlex class="md-caption"> description of the food so long that it spans multiple lines</span>
+	</div>
+	<div class="container"
+	fxLayout
+	fxLayout.xs="row">
+	<span style="margin-right: 10px" class="md-caption">12:30 am</span>
+	<span fxFlex class="md-caption"> description of the food so long that it spans multiple lines</span>
+</div>
+
+</div>
+</md-card-content>
+</md-card>
