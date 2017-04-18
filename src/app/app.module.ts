@@ -12,6 +12,7 @@ import { ActivityCard } from './components/activity-card.component';
 import { ParentNote } from './components/parent-note.component';
 import { LogToolbar } from './components/log-toolbar.component';
 import { DailyNotes } from './components/daily-notes.component';
+import 'rxjs/add/operator/map'
 
 export const firebaseConfig = {
     apiKey: 'AIzaSyDG6zuWIYXHq2SNpK8KJil10X6g2Pp7pQI',

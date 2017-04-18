@@ -20,6 +20,7 @@ export class ActivityCard implements OnInit {
 
 	ngOnInit(): void {
 		this.getActivities();
+		this.activityService.getActivitiesFirebase();
 	}
 
 }
