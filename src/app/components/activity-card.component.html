@@ -1,4 +1,4 @@
-<md-card *ngFor = "let activity of activities" style="padding:0px">
+<md-card *ngFor = "let activity of activities | async" style="padding:0px">
 	<md-card-content class="container"
 	fxLayout
 	fxLayout.xs="row"
