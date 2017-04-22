@@ -10,7 +10,7 @@ export class parentNoteService {
 	
 	getParentNote(): Observable<any[]> {
 		//return this.db.list('Activities').map(Activity.fromJsonList);
-		return this.db.list('Child/Dustin');
+		return this.db.object('/Child/Dustin');
 	}
 
 }

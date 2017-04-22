@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@angular/core';
 
 import { Activity } from '../components/activity';
 import { ACTIVITIES } from '../data/mock-activity';
-import { Subject } from 'rxjs/Rx';
+// import { Subject } from 'rxjs/Rx';
 import { AngularFire, AngularFireDatabase, FirebaseObjectObservable, FirebaseListObservable, FirebaseRef } from 'angularfire2';
 import { database } from 'firebase';
 import 'rxjs/add/operator/map';

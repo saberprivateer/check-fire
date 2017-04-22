@@ -1,8 +1,6 @@
 	<div style="margin-left: 10px">
-		<p style="margin-bottom:0px; margin-top: 6px" class="md-caption">
-			{{ parentNote | async | json }}
-			<br>
-			<i><b id="parent_note">A note from {{parentNote.Dustin.Father | async | json}} and {{parentNote.Mother | async}}...</b></i>
+		<p style="margin-bottom:0px; margin-top: 6px" class="md-caption">			
+			<i><b id="parent_note">A note from {{ (parentNote | async )?.Mother }} and {{ (parentNote | async )?.Father }}...</b></i>
 		</p>			
 		<p class="md-body-1">{{parent_note}}</p>
 		<hr>

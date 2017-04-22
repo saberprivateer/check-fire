@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { parentNoteService } from '../services/parent-note.service';
 import { Observable } from 'rxjs/Observable';
+import { AngularFire, FirebaseObjectObservable, FirebaseListObservable } from 'angularfire2';
 
 @Component({
 	selector: 'parent-note',
@@ -15,7 +16,6 @@ export class ParentNote implements OnInit {
 
 	//mother = 'Kristin';
 	//father = 'Dan';
-
 	parent_note = 'Lorem ipsum dolor sit amet, leo facilisis. Maecenas velit proin tellus, vel ipsum mollis.';
 	child = 'Dustin';
 
