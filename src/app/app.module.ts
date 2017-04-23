@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFireModule } from 'angularfire2';
+import { AppRoutingModule } from './app-routing.module';
+import { Router } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
@@ -34,6 +36,7 @@ export const firebaseConfig = {
       ReactiveFormsModule,
       FlexLayoutModule,
       AngularFireModule.initializeApp(firebaseConfig),
+      AppRoutingModule
     ],
     declarations: [
       AppComponent,
@@ -45,11 +48,11 @@ export const firebaseConfig = {
     ],
     bootstrap: [
       AppComponent,
-      DailyLogComponent,
+/*      DailyLogComponent,
       ActivityCard,
       ParentNote,
       LogToolbar,
-      DailyNotes,
+      DailyNotes,*/
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 

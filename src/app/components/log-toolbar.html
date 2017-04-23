@@ -1,5 +1,7 @@
 <md-toolbar class="container" fxLayout fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px" color="primary">
-  <md-icon>keyboard_arrow_left</md-icon>
-  <span>{{date}}</span>
-  <md-icon>keyboard_arrow_right</md-icon>  
+	<a routerLink="/DailyLog" routerLinkActive="active">
+		<button md-button><md-icon>keyboard_arrow_left</md-icon></button>
+	</a>
+	<span>{{date}}</span>
+	<button md-button><md-icon>keyboard_arrow_right</md-icon></button>
 </md-toolbar>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
 	selector: 'daily-log',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class DailyLogComponent {
-
+constructor(
+	private route: ActivatedRoute
+	) {}
 }
